@@ -1,0 +1,20 @@
+{
+  "benchmark": "HumanEvalFix",
+  "run_name": "humanevalfixtests-python__starcoder2-3b-baseline__instruct__20260409T165003Z",
+  "status": "invalidated",
+  "task": "humanevalfixtests-python",
+  "prompt": "instruct",
+  "model_name": "starcoder2-3b-baseline",
+  "api_model": "starcoder2-3b-baseline",
+  "config_path": "/shared_workspace_mfs/aadi/Projects/Master_VLLM/runtime/slot1-humanevalfix-starcoder2-3b-baseline.yaml",
+  "generation_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__starcoder2-3b-baseline__instruct__20260409T165003Z/humanevalfixtests-python__starcoder2-3b-baseline__instruct__start0__end164.generations.json",
+  "metrics_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__starcoder2-3b-baseline__instruct__20260409T165003Z/humanevalfixtests-python__starcoder2-3b-baseline__instruct__start0__end164.metrics.json",
+  "error_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__starcoder2-3b-baseline__instruct__20260409T165003Z/humanevalfixtests-python__starcoder2-3b-baseline__instruct__start0__end164.errors.json",
+  "eval_log_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__starcoder2-3b-baseline__instruct__20260409T165003Z/detached_eval.log",
+  "generation_completed_at_utc": "2026-04-09T16:50:25.508414+00:00",
+  "limit_start": 0,
+  "limit_end": 164,
+  "eval_started_at_utc": "2026-04-09T16:50:26.629899+00:00",
+  "eval_completed_at_utc": "2026-04-09T16:50:33.472079+00:00",
+  "invalidation_reason": "max_tokens==context_length caused all 400 errors; bogus 0% result"
+}

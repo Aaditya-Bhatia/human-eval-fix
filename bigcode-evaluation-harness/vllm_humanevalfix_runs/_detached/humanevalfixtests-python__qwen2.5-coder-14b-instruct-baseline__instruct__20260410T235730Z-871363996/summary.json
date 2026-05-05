@@ -1,0 +1,21 @@
+{
+  "benchmark": "HumanEvalFix",
+  "run_name": "humanevalfixtests-python__qwen2.5-coder-14b-instruct-baseline__instruct__20260410T235730Z-871363996",
+  "status": "eval_complete",
+  "task": "humanevalfixtests-python",
+  "prompt": "instruct",
+  "model_name": "qwen2.5-coder-14b-instruct-baseline",
+  "api_model": "qwen2.5-coder-14b-instruct-baseline",
+  "config_path": "/shared_workspace_mfs/aadi/Projects/Master_VLLM/runtime/slot0-humanevalfix-qwen2.5-coder-14b-instruct-baseline.yaml",
+  "eval_log_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__qwen2.5-coder-14b-instruct-baseline__instruct__20260410T235730Z-871363996/detached_eval.log",
+  "generation_started_at_utc": "2026-04-10T23:57:30.871679+00:00",
+  "limit_start": 0,
+  "generation_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__qwen2.5-coder-14b-instruct-baseline__instruct__20260410T235730Z-871363996/humanevalfixtests-python__qwen2.5-coder-14b-instruct-baseline__instruct__start0__end164.generations.json",
+  "metrics_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__qwen2.5-coder-14b-instruct-baseline__instruct__20260410T235730Z-871363996/humanevalfixtests-python__qwen2.5-coder-14b-instruct-baseline__instruct__start0__end164.metrics.json",
+  "error_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__qwen2.5-coder-14b-instruct-baseline__instruct__20260410T235730Z-871363996/humanevalfixtests-python__qwen2.5-coder-14b-instruct-baseline__instruct__start0__end164.errors.json",
+  "generation_completed_at_utc": "2026-04-10T23:59:47.381964+00:00",
+  "limit_end": 164,
+  "detached_worker_pid": 1105084,
+  "eval_started_at_utc": "2026-04-10T23:59:48.578368+00:00",
+  "eval_completed_at_utc": "2026-04-10T23:59:54.300264+00:00"
+}

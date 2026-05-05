@@ -1,0 +1,5 @@
+[
+  [
+    "from typing import List\n\n\ndef has_close_elements(numbers: List[float], threshold: float) -> bool:\n    for idx, elem in enumerate(numbers):\n        for idx2, elem2 in enumerate(numbers):\n            if idx != idx2:\n                distance = elem - elem2\n                if distance < threshold:\n                    return True\n\n    return False"
+  ]
+]

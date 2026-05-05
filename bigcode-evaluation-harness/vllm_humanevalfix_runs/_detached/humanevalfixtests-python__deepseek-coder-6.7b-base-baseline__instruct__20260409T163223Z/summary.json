@@ -1,0 +1,19 @@
+{
+  "benchmark": "HumanEvalFix",
+  "run_name": "humanevalfixtests-python__deepseek-coder-6.7b-base-baseline__instruct__20260409T163223Z",
+  "status": "eval_complete",
+  "task": "humanevalfixtests-python",
+  "prompt": "instruct",
+  "model_name": "deepseek-coder-6.7b-base-baseline",
+  "api_model": "deepseek-coder-6.7b-base-baseline",
+  "config_path": "/shared_workspace_mfs/aadi/Projects/Master_VLLM/runtime/slot0-humanevalfix-deepseek-coder-6.7b-base-baseline.yaml",
+  "generation_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__deepseek-coder-6.7b-base-baseline__instruct__20260409T163223Z/humanevalfixtests-python__deepseek-coder-6.7b-base-baseline__instruct__start0__end1.generations.json",
+  "metrics_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__deepseek-coder-6.7b-base-baseline__instruct__20260409T163223Z/humanevalfixtests-python__deepseek-coder-6.7b-base-baseline__instruct__start0__end1.metrics.json",
+  "error_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__deepseek-coder-6.7b-base-baseline__instruct__20260409T163223Z/humanevalfixtests-python__deepseek-coder-6.7b-base-baseline__instruct__start0__end1.errors.json",
+  "eval_log_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__deepseek-coder-6.7b-base-baseline__instruct__20260409T163223Z/detached_eval.log",
+  "generation_completed_at_utc": "2026-04-09T16:32:28.539245+00:00",
+  "limit_start": 0,
+  "limit_end": 1,
+  "eval_started_at_utc": "2026-04-09T16:32:29.684260+00:00",
+  "eval_completed_at_utc": "2026-04-09T16:32:33.699356+00:00"
+}

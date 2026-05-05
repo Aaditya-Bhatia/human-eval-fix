@@ -1,0 +1,21 @@
+{
+  "benchmark": "HumanEvalFix",
+  "run_name": "humanevalfixtests-python__starcoder2-3b-lora-dirty__instruct__20260415T185622Z-288412497",
+  "status": "eval_complete",
+  "task": "humanevalfixtests-python",
+  "prompt": "instruct",
+  "model_name": "starcoder2-3b-lora-dirty",
+  "api_model": "starcoder2-3b-lora-dirty",
+  "config_path": "/shared_workspace_mfs/aadi/Projects/Master_VLLM/runtime/slot1-humanevalfix-starcoder2-3b-lora-dirty.yaml",
+  "eval_log_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__starcoder2-3b-lora-dirty__instruct__20260415T185622Z-288412497/detached_eval.log",
+  "generation_started_at_utc": "2026-04-15T18:56:22.288875+00:00",
+  "limit_start": 0,
+  "generation_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__starcoder2-3b-lora-dirty__instruct__20260415T185622Z-288412497/humanevalfixtests-python__starcoder2-3b-lora-dirty__instruct__start0__end164.generations.json",
+  "metrics_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__starcoder2-3b-lora-dirty__instruct__20260415T185622Z-288412497/humanevalfixtests-python__starcoder2-3b-lora-dirty__instruct__start0__end164.metrics.json",
+  "error_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__starcoder2-3b-lora-dirty__instruct__20260415T185622Z-288412497/humanevalfixtests-python__starcoder2-3b-lora-dirty__instruct__start0__end164.errors.json",
+  "generation_completed_at_utc": "2026-04-15T18:56:33.360792+00:00",
+  "limit_end": 164,
+  "detached_worker_pid": 851380,
+  "eval_started_at_utc": "2026-04-15T18:56:34.781617+00:00",
+  "eval_completed_at_utc": "2026-04-15T18:56:52.514046+00:00"
+}

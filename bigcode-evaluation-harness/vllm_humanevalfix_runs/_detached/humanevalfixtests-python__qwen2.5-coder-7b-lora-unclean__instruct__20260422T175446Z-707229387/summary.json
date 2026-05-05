@@ -1,0 +1,21 @@
+{
+  "benchmark": "HumanEvalFix",
+  "run_name": "humanevalfixtests-python__qwen2.5-coder-7b-lora-unclean__instruct__20260422T175446Z-707229387",
+  "status": "eval_complete",
+  "task": "humanevalfixtests-python",
+  "prompt": "instruct",
+  "model_name": "qwen2.5-coder-7b-lora-unclean",
+  "api_model": "editbench_adapter",
+  "config_path": "/shared_workspace_mfs/aadi/Projects/Master_VLLM/runtime/slot1-humanevalfix-qwen2.5-coder-7b-lora-unclean.yaml",
+  "eval_log_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__qwen2.5-coder-7b-lora-unclean__instruct__20260422T175446Z-707229387/detached_eval.log",
+  "generation_started_at_utc": "2026-04-22T17:54:46.708453+00:00",
+  "limit_start": 0,
+  "generation_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__qwen2.5-coder-7b-lora-unclean__instruct__20260422T175446Z-707229387/humanevalfixtests-python__qwen2.5-coder-7b-lora-unclean__instruct__start0__end164.generations.json",
+  "metrics_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__qwen2.5-coder-7b-lora-unclean__instruct__20260422T175446Z-707229387/humanevalfixtests-python__qwen2.5-coder-7b-lora-unclean__instruct__start0__end164.metrics.json",
+  "error_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__qwen2.5-coder-7b-lora-unclean__instruct__20260422T175446Z-707229387/humanevalfixtests-python__qwen2.5-coder-7b-lora-unclean__instruct__start0__end164.errors.json",
+  "generation_completed_at_utc": "2026-04-22T17:55:01.953511+00:00",
+  "limit_end": 164,
+  "detached_worker_pid": 2468183,
+  "eval_started_at_utc": "2026-04-22T17:55:05.634805+00:00",
+  "eval_completed_at_utc": "2026-04-22T17:55:12.577101+00:00"
+}

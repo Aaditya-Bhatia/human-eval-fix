@@ -1,0 +1,18 @@
+# Virtualenvs (recreated by migrate.sh)
+bigcode-evaluation-harness/.venv-vllm-bench/
+
+# Dataset (downloaded by migrate.sh)
+humanevalpack/
+
+# Reference repos (clone separately if needed)
+octopack/
+
+# Logs
+logs/
+
+# Python
+__pycache__/
+*.pyc
+
+# Claude project config (local)
+.claude/

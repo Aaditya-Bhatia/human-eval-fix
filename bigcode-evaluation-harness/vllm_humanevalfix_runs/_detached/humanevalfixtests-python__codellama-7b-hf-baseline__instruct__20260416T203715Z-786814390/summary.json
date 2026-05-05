@@ -1,0 +1,21 @@
+{
+  "benchmark": "HumanEvalFix",
+  "run_name": "humanevalfixtests-python__codellama-7b-hf-baseline__instruct__20260416T203715Z-786814390",
+  "status": "eval_complete",
+  "task": "humanevalfixtests-python",
+  "prompt": "instruct",
+  "model_name": "codellama-7b-hf-baseline",
+  "api_model": "codellama-7b-hf-baseline",
+  "config_path": "/shared_workspace_mfs/aadi/Projects/Master_VLLM/runtime/slot1-humanevalfix-codellama-7b-hf-baseline.yaml",
+  "eval_log_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__codellama-7b-hf-baseline__instruct__20260416T203715Z-786814390/detached_eval.log",
+  "generation_started_at_utc": "2026-04-16T20:37:15.787391+00:00",
+  "limit_start": 0,
+  "generation_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__codellama-7b-hf-baseline__instruct__20260416T203715Z-786814390/humanevalfixtests-python__codellama-7b-hf-baseline__instruct__start0__end164.generations.json",
+  "metrics_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__codellama-7b-hf-baseline__instruct__20260416T203715Z-786814390/humanevalfixtests-python__codellama-7b-hf-baseline__instruct__start0__end164.metrics.json",
+  "error_path": "/shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/_detached/humanevalfixtests-python__codellama-7b-hf-baseline__instruct__20260416T203715Z-786814390/humanevalfixtests-python__codellama-7b-hf-baseline__instruct__start0__end164.errors.json",
+  "generation_completed_at_utc": "2026-04-16T20:39:51.623741+00:00",
+  "limit_end": 164,
+  "detached_worker_pid": 421481,
+  "eval_started_at_utc": "2026-04-16T20:39:53.085035+00:00",
+  "eval_completed_at_utc": "2026-04-16T20:40:09.829202+00:00"
+}
