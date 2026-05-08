@@ -1,0 +1,365 @@
+/shared_workspace_mfs/aadi/miniconda3/envs/SFT_env/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+INFO 04-07 17:57:24 [serve.py:100] Defaulting api_server_count to data_parallel_size (2).
+INFO 04-07 17:57:24 [utils.py:302] 
+INFO 04-07 17:57:24 [utils.py:302]        █     █     █▄   ▄█
+INFO 04-07 17:57:24 [utils.py:302]  ▄▄ ▄█ █     █     █ ▀▄▀ █  version 0.17.1
+INFO 04-07 17:57:24 [utils.py:302]   █▄█▀ █     █     █     █  model   /shared_workspace_mfs/aadi/Models/hub/models--deepseek-ai--deepseek-coder-6.7b-instruct/snapshots/e5d64addd26a6a1db0f9b863abf6ee3141936807
+INFO 04-07 17:57:24 [utils.py:302]    ▀▀  ▀▀▀▀▀ ▀▀▀▀▀ ▀     ▀
+INFO 04-07 17:57:24 [utils.py:302] 
+INFO 04-07 17:57:24 [utils.py:238] non-default args: {'model_tag': '/shared_workspace_mfs/aadi/Models/hub/models--deepseek-ai--deepseek-coder-6.7b-instruct/snapshots/e5d64addd26a6a1db0f9b863abf6ee3141936807', 'api_server_count': 2, 'lora_modules': [LoRAModulePath(name='deepseek-coder-6.7b-lora-dirty', path='/shared_workspace_mfs/aadi/Projects/SFT/SFT_runs/model/deepseek-coder-6.7b-instruct_lora_7b_deepseek_code_edit_dirty_2026-04-07_15-52-46', base_model_name=None)], 'chat_template': '/shared_workspace_mfs/aadi/Projects/EditBench_fork/chat_templates/simple_concat.jinja', 'port': 8788, 'model': '/shared_workspace_mfs/aadi/Models/hub/models--deepseek-ai--deepseek-coder-6.7b-instruct/snapshots/e5d64addd26a6a1db0f9b863abf6ee3141936807', 'trust_remote_code': True, 'max_model_len': 16384, 'served_model_name': ['deepseek-coder-6.7b-lora-dirty-base-model'], 'data_parallel_size': 2, 'enable_lora': True, 'max_num_seqs': 256}
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+INFO 04-07 17:57:24 [model.py:531] Resolved architecture: LlamaForCausalLM
+INFO 04-07 17:57:24 [model.py:1554] Using max model len 16384
+INFO 04-07 17:57:24 [scheduler.py:231] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 04-07 17:57:24 [vllm.py:747] Asynchronous scheduling is enabled.
+INFO 04-07 17:57:24 [utils.py:865] Started DP Coordinator process (PID: 3917816)
+INFO 04-07 17:57:24 [utils.py:217] Started 2 API server processes
+/shared_workspace_mfs/aadi/miniconda3/envs/SFT_env/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/shared_workspace_mfs/aadi/miniconda3/envs/SFT_env/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/shared_workspace_mfs/aadi/miniconda3/envs/SFT_env/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/shared_workspace_mfs/aadi/miniconda3/envs/SFT_env/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/shared_workspace_mfs/aadi/miniconda3/envs/SFT_env/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+(EngineCore_DP1 pid=3917820) WARNING 04-07 17:57:38 [multiproc_executor.py:945] Reducing Torch parallelism from 112 threads to 1 to avoid unnecessary CPU contention. Set OMP_NUM_THREADS in the external environment to tune this value as needed.
+(EngineCore_DP0 pid=3917819) INFO 04-07 17:57:38 [core.py:101] Initializing a V1 LLM engine (v0.17.1) with config: model='/shared_workspace_mfs/aadi/Models/hub/models--deepseek-ai--deepseek-coder-6.7b-instruct/snapshots/e5d64addd26a6a1db0f9b863abf6ee3141936807', speculative_config=None, tokenizer='/shared_workspace_mfs/aadi/Models/hub/models--deepseek-ai--deepseek-coder-6.7b-instruct/snapshots/e5d64addd26a6a1db0f9b863abf6ee3141936807', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, tokenizer_revision=None, trust_remote_code=True, dtype=torch.bfloat16, max_seq_len=16384, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, data_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, enable_return_routed_experts=False, kv_cache_dtype=auto, device_config=cuda, structured_outputs_config=StructuredOutputsConfig(backend='auto', disable_fallback=False, disable_any_whitespace=False, disable_additional_properties=False, reasoning_parser='', reasoning_parser_plugin='', enable_in_reasoning=False), observability_config=ObservabilityConfig(show_hidden_metrics_for_version=None, otlp_traces_endpoint=None, collect_detailed_traces=None, kv_cache_metrics=False, kv_cache_metrics_sample=0.01, cudagraph_metrics=False, enable_layerwise_nvtx_tracing=False, enable_mfu_metrics=False, enable_mm_processor_stats=False, enable_logging_iteration_details=False), seed=0, served_model_name=deepseek-coder-6.7b-lora-dirty-base-model, enable_prefix_caching=True, enable_chunked_prefill=True, pooler_config=None, compilation_config={'level': None, 'mode': <CompilationMode.VLLM_COMPILE: 3>, 'debug_dump_path': None, 'cache_dir': '', 'compile_cache_save_format': 'binary', 'backend': 'inductor', 'custom_ops': ['none'], 'splitting_ops': ['vllm::unified_attention', 'vllm::unified_attention_with_output', 'vllm::unified_mla_attention', 'vllm::unified_mla_attention_with_output', 'vllm::mamba_mixer2', 'vllm::mamba_mixer', 'vllm::short_conv', 'vllm::linear_attention', 'vllm::plamo2_mamba_mixer', 'vllm::gdn_attention_core', 'vllm::kda_attention', 'vllm::sparse_attn_indexer', 'vllm::rocm_aiter_sparse_attn_indexer', 'vllm::unified_kv_cache_update', 'vllm::unified_mla_kv_cache_update'], 'compile_mm_encoder': False, 'compile_sizes': [], 'compile_ranges_split_points': [8192], 'inductor_compile_config': {'enable_auto_functionalized_v2': False, 'combo_kernels': True, 'benchmark_combo_kernel': True}, 'inductor_passes': {}, 'cudagraph_mode': <CUDAGraphMode.FULL_AND_PIECEWISE: (2, 1)>, 'cudagraph_num_of_warmups': 1, 'cudagraph_capture_sizes': [1, 2, 4, 8, 16, 24, 32, 40, 48, 56, 64, 72, 80, 88, 96, 104, 112, 120, 128, 136, 144, 152, 160, 168, 176, 184, 192, 200, 208, 216, 224, 232, 240, 248, 256, 272, 288, 304, 320, 336, 352, 368, 384, 400, 416, 432, 448, 464, 480, 496, 512], 'cudagraph_copy_inputs': False, 'cudagraph_specialize_lora': True, 'use_inductor_graph_partition': False, 'pass_config': {'fuse_norm_quant': False, 'fuse_act_quant': False, 'fuse_attn_quant': False, 'enable_sp': False, 'fuse_gemm_comms': False, 'fuse_allreduce_rms': False}, 'max_cudagraph_capture_size': 512, 'dynamic_shapes_config': {'type': <DynamicShapesType.BACKED: 'backed'>, 'evaluate_guards': False, 'assume_32_bit_indexing': False}, 'local_cache_dir': None, 'fast_moe_cold_start': True, 'static_all_moe_layers': []}
+(EngineCore_DP1 pid=3917820) INFO 04-07 17:57:38 [multiproc_executor.py:134] DP group leader: node_rank=0, node_rank_within_dp=0, master_addr=127.0.0.1, mq_connect_ip=10.10.110.65 (local), world_size=1, local_world_size=1
+(EngineCore_DP0 pid=3917819) WARNING 04-07 17:57:38 [multiproc_executor.py:945] Reducing Torch parallelism from 112 threads to 1 to avoid unnecessary CPU contention. Set OMP_NUM_THREADS in the external environment to tune this value as needed.
+(EngineCore_DP0 pid=3917819) INFO 04-07 17:57:38 [multiproc_executor.py:134] DP group leader: node_rank=0, node_rank_within_dp=0, master_addr=127.0.0.1, mq_connect_ip=10.10.110.65 (local), world_size=1, local_world_size=1
+(ApiServer_1 pid=3917822) The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+(ApiServer_1 pid=3917822) The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+(ApiServer_1 pid=3917822) INFO 04-07 17:57:38 [model.py:531] Resolved architecture: LlamaForCausalLM
+(ApiServer_1 pid=3917822) INFO 04-07 17:57:38 [model.py:1554] Using max model len 16384
+(ApiServer_1 pid=3917822) INFO 04-07 17:57:38 [scheduler.py:231] Chunked prefill is enabled with max_num_batched_tokens=8192.
+(ApiServer_1 pid=3917822) INFO 04-07 17:57:38 [vllm.py:747] Asynchronous scheduling is enabled.
+(ApiServer_0 pid=3917821) The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+(ApiServer_0 pid=3917821) The argument `trust_remote_code` is to be used with Auto classes. It has no effect here and is ignored.
+(ApiServer_0 pid=3917821) INFO 04-07 17:57:38 [model.py:531] Resolved architecture: LlamaForCausalLM
+(ApiServer_0 pid=3917821) INFO 04-07 17:57:38 [model.py:1554] Using max model len 16384
+(ApiServer_0 pid=3917821) INFO 04-07 17:57:39 [scheduler.py:231] Chunked prefill is enabled with max_num_batched_tokens=8192.
+(ApiServer_0 pid=3917821) INFO 04-07 17:57:39 [vllm.py:747] Asynchronous scheduling is enabled.
+/shared_workspace_mfs/aadi/miniconda3/envs/SFT_env/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+/shared_workspace_mfs/aadi/miniconda3/envs/SFT_env/lib/python3.13/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+(Worker pid=3919285) INFO 04-07 17:57:51 [parallel_state.py:1393] world_size=1 rank=0 local_rank=0 distributed_init_method=tcp://127.0.0.1:46891 backend=nccl
+(Worker pid=3919284) INFO 04-07 17:57:51 [parallel_state.py:1393] world_size=1 rank=0 local_rank=1 distributed_init_method=tcp://127.0.0.1:52639 backend=nccl
+(Worker pid=3919285) INFO 04-07 17:57:51 [parallel_state.py:1715] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A
+(Worker pid=3919284) INFO 04-07 17:57:51 [parallel_state.py:1715] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, PCP rank 0, TP rank 0, EP rank N/A, EPLB rank N/A
+(Worker pid=3919285) INFO 04-07 17:57:52 [base.py:106] Offloader set to NoopOffloader
+(Worker pid=3919285) (Worker pid=3919285) INFO 04-07 17:57:52 [gpu_model_runner.py:4281] Starting to load model /shared_workspace_mfs/aadi/Models/hub/models--deepseek-ai--deepseek-coder-6.7b-instruct/snapshots/e5d64addd26a6a1db0f9b863abf6ee3141936807...
+(Worker pid=3919284) INFO 04-07 17:57:52 [base.py:106] Offloader set to NoopOffloader
+(Worker pid=3919284) (Worker pid=3919284) INFO 04-07 17:57:52 [gpu_model_runner.py:4281] Starting to load model /shared_workspace_mfs/aadi/Models/hub/models--deepseek-ai--deepseek-coder-6.7b-instruct/snapshots/e5d64addd26a6a1db0f9b863abf6ee3141936807...
+(Worker pid=3919285) (Worker pid=3919285) INFO 04-07 17:57:53 [cuda.py:405] Using FLASH_ATTN attention backend out of potential backends: ['FLASH_ATTN', 'FLASHINFER', 'TRITON_ATTN', 'FLEX_ATTENTION'].
+(Worker pid=3919285) (Worker pid=3919285) INFO 04-07 17:57:53 [flash_attn.py:587] Using FlashAttention version 3
+(Worker pid=3919285) (Worker pid=3919285) <frozen importlib._bootstrap_external>:1325: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=3919284) (Worker pid=3919284) <frozen importlib._bootstrap_external>:1325: FutureWarning: The cuda.cudart module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.runtime module instead.
+(Worker pid=3919285) (Worker pid=3919285) <frozen importlib._bootstrap_external>:1325: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=3919284) (Worker pid=3919284) <frozen importlib._bootstrap_external>:1325: FutureWarning: The cuda.nvrtc module is deprecated and will be removed in a future release, please switch to use the cuda.bindings.nvrtc module instead.
+(Worker pid=3919284) (Worker pid=3919284) Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+(Worker pid=3919285) (Worker pid=3919285) Loading safetensors checkpoint shards:   0% Completed | 0/2 [00:00<?, ?it/s]
+(Worker pid=3919285) (Worker pid=3919285) Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:01<00:01,  1.89s/it]
+(Worker pid=3919284) (Worker pid=3919284) Loading safetensors checkpoint shards:  50% Completed | 1/2 [00:01<00:01,  1.89s/it]
+(Worker pid=3919284) (Worker pid=3919284) Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.21s/it]
+(Worker pid=3919284) (Worker pid=3919284) Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.31s/it]
+(Worker pid=3919284) (Worker pid=3919284) 
+(Worker pid=3919285) (Worker pid=3919285) Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.24s/it]
+(Worker pid=3919285) (Worker pid=3919285) Loading safetensors checkpoint shards: 100% Completed | 2/2 [00:02<00:00,  1.34s/it]
+(Worker pid=3919285) (Worker pid=3919285) 
+(Worker pid=3919284) (Worker pid=3919284) INFO 04-07 17:57:56 [punica_selector.py:20] Using PunicaWrapperGPU.
+(Worker pid=3919285) (Worker pid=3919285) INFO 04-07 17:57:56 [default_loader.py:293] Loading weights took 2.77 seconds
+(Worker pid=3919285) (Worker pid=3919285) INFO 04-07 17:57:56 [punica_selector.py:20] Using PunicaWrapperGPU.
+(Worker pid=3919285) (Worker pid=3919285) INFO 04-07 17:57:57 [gpu_model_runner.py:4364] Model loading took 12.65 GiB memory and 4.156064 seconds
+(Worker pid=3919285) (Worker pid=3919285) INFO 04-07 17:58:00 [decorators.py:465] Directly load AOT compilation from path /home/aadi/.cache/vllm/torch_compile_cache/torch_aot_compile/cfe4fa19b1cccb7835a38d3d3a0cc9e27aa1737078ce14ceeafa5d4e18e05212/rank_0_0/model
+(Worker pid=3919284) (Worker pid=3919284) INFO 04-07 17:58:00 [decorators.py:465] Directly load AOT compilation from path /home/aadi/.cache/vllm/torch_compile_cache/torch_aot_compile/cfe4fa19b1cccb7835a38d3d3a0cc9e27aa1737078ce14ceeafa5d4e18e05212/rank_0_1/model
+(Worker pid=3919285) (Worker pid=3919285) INFO 04-07 17:58:01 [backends.py:916] Using cache directory: /home/aadi/.cache/vllm/torch_compile_cache/310099c3b4/rank_0_0/backbone for vLLM's torch.compile
+(Worker pid=3919285) (Worker pid=3919285) INFO 04-07 17:58:01 [backends.py:976] Dynamo bytecode transform time: 3.97 s
+(Worker pid=3919285) (Worker pid=3919285) INFO 04-07 17:58:03 [backends.py:266] Directly load the compiled graph(s) for compile range (1, 8192) from the cache, took 1.251 s
+(Worker pid=3919285) (Worker pid=3919285) INFO 04-07 17:58:03 [monitor.py:35] torch.compile takes 5.72 s in total
+(EngineCore_DP1 pid=3917820) INFO 04-07 17:58:09 [kv_cache_utils.py:1314] GPU KV cache size: 118,272 tokens
+(EngineCore_DP1 pid=3917820) INFO 04-07 17:58:09 [kv_cache_utils.py:1319] Maximum concurrency for 16,384 tokens per request: 7.22x
+(Worker pid=3919284) (Worker pid=3919284) 2026-04-07 17:58:09,822 - INFO - autotuner.py:256 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(Worker pid=3919285) (Worker pid=3919285) INFO 04-07 17:58:09 [gpu_worker.py:424] Available KV cache memory: 57.76 GiB
+(EngineCore_DP0 pid=3917819) INFO 04-07 17:58:09 [kv_cache_utils.py:1314] GPU KV cache size: 118,272 tokens
+(EngineCore_DP0 pid=3917819) INFO 04-07 17:58:09 [kv_cache_utils.py:1319] Maximum concurrency for 16,384 tokens per request: 7.22x
+(Worker pid=3919285) (Worker pid=3919285) 2026-04-07 17:58:09,857 - INFO - autotuner.py:256 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(Worker pid=3919284) (Worker pid=3919284) 2026-04-07 17:58:09,862 - INFO - autotuner.py:262 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(Worker pid=3919285) (Worker pid=3919285) 2026-04-07 17:58:09,899 - INFO - autotuner.py:262 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(Worker pid=3919284) (Worker pid=3919284) Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/102 [00:00<?, ?it/s](Worker pid=3919285) (Worker pid=3919285) Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/102 [00:00<?, ?it/s](Worker pid=3919284) (Worker pid=3919284) WARNING 04-07 17:58:10 [utils.py:268] Using default LoRA kernel configs
+(Worker pid=3919285) (Worker pid=3919285) WARNING 04-07 17:58:10 [utils.py:268] Using default LoRA kernel configs
+Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   1%|          | 1/102 [00:00<00:45,  2.22it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   1%|          | 1/102 [00:00<00:45,  2.23it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   3%|▎         | 3/102 [00:00<00:15,  6.45it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   3%|▎         | 3/102 [00:00<00:15,  6.51it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   5%|▍         | 5/102 [00:00<00:09,  9.81it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   5%|▍         | 5/102 [00:00<00:09,  9.87it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   7%|▋         | 7/102 [00:00<00:07, 12.37it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   7%|▋         | 7/102 [00:00<00:07, 12.46it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   9%|▉         | 9/102 [00:00<00:06, 14.31it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   9%|▉         | 9/102 [00:00<00:06, 14.32it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  12%|█▏        | 12/102 [00:01<00:05, 16.68it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  12%|█▏        | 12/102 [00:01<00:05, 16.65it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  14%|█▎        | 14/102 [00:01<00:05, 17.01it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  14%|█▎        | 14/102 [00:01<00:05, 16.91it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  16%|█▌        | 16/102 [00:01<00:05, 17.18it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  16%|█▌        | 16/102 [00:01<00:05, 17.14it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  18%|█▊        | 18/102 [00:01<00:04, 17.07it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  18%|█▊        | 18/102 [00:01<00:04, 17.18it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  20%|█▉        | 20/102 [00:01<00:04, 17.80it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  20%|█▉        | 20/102 [00:01<00:04, 17.61it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  22%|██▏       | 22/102 [00:01<00:04, 18.26it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  23%|██▎       | 23/102 [00:01<00:04, 19.14it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  24%|██▎       | 24/102 [00:01<00:04, 18.54it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  25%|██▍       | 25/102 [00:01<00:04, 17.83it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  25%|██▌       | 26/102 [00:01<00:04, 18.65it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  26%|██▋       | 27/102 [00:01<00:04, 18.26it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  27%|██▋       | 28/102 [00:01<00:03, 18.92it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  28%|██▊       | 29/102 [00:01<00:03, 18.28it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  29%|██▉       | 30/102 [00:01<00:03, 19.08it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  30%|███       | 31/102 [00:02<00:03, 18.50it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  31%|███▏      | 32/102 [00:02<00:03, 18.95it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  32%|███▏      | 33/102 [00:02<00:03, 18.50it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  33%|███▎      | 34/102 [00:02<00:03, 18.64it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  35%|███▌      | 36/102 [00:02<00:05, 11.51it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  35%|███▌      | 36/102 [00:02<00:06, 10.64it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  37%|███▋      | 38/102 [00:02<00:05, 12.70it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  37%|███▋      | 38/102 [00:02<00:05, 12.18it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  39%|███▉      | 40/102 [00:02<00:04, 13.93it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  39%|███▉      | 40/102 [00:02<00:04, 13.21it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  41%|████      | 42/102 [00:02<00:03, 15.21it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  41%|████      | 42/102 [00:02<00:04, 14.61it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  43%|████▎     | 44/102 [00:02<00:03, 16.24it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  43%|████▎     | 44/102 [00:03<00:03, 15.74it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  45%|████▌     | 46/102 [00:03<00:03, 16.93it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  45%|████▌     | 46/102 [00:03<00:03, 16.39it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  47%|████▋     | 48/102 [00:03<00:03, 17.51it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  47%|████▋     | 48/102 [00:03<00:03, 17.05it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  49%|████▉     | 50/102 [00:03<00:02, 17.69it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  49%|████▉     | 50/102 [00:03<00:03, 17.12it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  51%|█████     | 52/102 [00:03<00:02, 17.89it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  51%|█████     | 52/102 [00:03<00:02, 17.75it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  53%|█████▎    | 54/102 [00:03<00:02, 18.16it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  53%|█████▎    | 54/102 [00:03<00:02, 17.99it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  55%|█████▍    | 56/102 [00:03<00:02, 18.59it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  55%|█████▍    | 56/102 [00:03<00:02, 18.43it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  57%|█████▋    | 58/102 [00:03<00:02, 18.13it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  57%|█████▋    | 58/102 [00:03<00:02, 17.86it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  59%|█████▉    | 60/102 [00:03<00:02, 18.23it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  59%|█████▉    | 60/102 [00:03<00:02, 18.13it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  61%|██████    | 62/102 [00:03<00:02, 17.88it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  61%|██████    | 62/102 [00:03<00:02, 18.24it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  63%|██████▎   | 64/102 [00:04<00:02, 18.43it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  63%|██████▎   | 64/102 [00:04<00:02, 18.44it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  65%|██████▍   | 66/102 [00:04<00:02, 17.94it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  65%|██████▍   | 66/102 [00:04<00:02, 17.73it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  67%|██████▋   | 68/102 [00:04<00:01, 17.64it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  67%|██████▋   | 68/102 [00:04<00:01, 17.52it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  69%|██████▊   | 70/102 [00:04<00:01, 17.23it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  69%|██████▊   | 70/102 [00:04<00:01, 17.15it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  71%|███████   | 72/102 [00:04<00:01, 17.33it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  71%|███████   | 72/102 [00:04<00:01, 17.25it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  73%|███████▎  | 74/102 [00:04<00:01, 17.26it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  73%|███████▎  | 74/102 [00:04<00:01, 17.21it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  75%|███████▍  | 76/102 [00:04<00:01, 17.36it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  75%|███████▍  | 76/102 [00:04<00:01, 17.19it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  76%|███████▋  | 78/102 [00:04<00:01, 17.31it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  76%|███████▋  | 78/102 [00:04<00:01, 17.13it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  78%|███████▊  | 80/102 [00:05<00:01, 17.41it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  78%|███████▊  | 80/102 [00:05<00:01, 17.23it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  80%|████████  | 82/102 [00:05<00:01, 17.64it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  80%|████████  | 82/102 [00:05<00:01, 17.43it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  82%|████████▏ | 84/102 [00:05<00:01, 17.44it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  82%|████████▏ | 84/102 [00:05<00:01, 17.14it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  84%|████████▍ | 86/102 [00:05<00:00, 17.31it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  84%|████████▍ | 86/102 [00:05<00:00, 17.12it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  86%|████████▋ | 88/102 [00:05<00:00, 17.10it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  86%|████████▋ | 88/102 [00:05<00:00, 16.75it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  88%|████████▊ | 90/102 [00:05<00:00, 16.55it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  88%|████████▊ | 90/102 [00:05<00:00, 16.26it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  90%|█████████ | 92/102 [00:05<00:00, 16.89it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  90%|█████████ | 92/102 [00:05<00:00, 16.59it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  92%|█████████▏| 94/102 [00:05<00:00, 16.94it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  92%|█████████▏| 94/102 [00:05<00:00, 16.72it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  94%|█████████▍| 96/102 [00:05<00:00, 17.24it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  94%|█████████▍| 96/102 [00:05<00:00, 17.06it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  96%|█████████▌| 98/102 [00:06<00:00, 17.79it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  96%|█████████▌| 98/102 [00:06<00:00, 17.58it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  98%|█████████▊| 100/102 [00:06<00:00, 17.31it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  98%|█████████▊| 100/102 [00:06<00:00, 17.73it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 102/102 [00:06<00:00, 10.16it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 102/102 [00:06<00:00, 15.56it/s]
+(Worker pid=3919284) (Worker pid=3919284) Capturing CUDA graphs (decode, FULL):   0%|          | 0/70 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 102/102 [00:06<00:00, 10.42it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 102/102 [00:06<00:00, 15.52it/s]
+(Worker pid=3919285) (Worker pid=3919285) Capturing CUDA graphs (decode, FULL):   0%|          | 0/70 [00:00<?, ?it/s]Capturing CUDA graphs (decode, FULL):   3%|▎         | 2/70 [00:00<00:04, 15.53it/s]Capturing CUDA graphs (decode, FULL):   1%|▏         | 1/70 [00:00<00:07,  9.40it/s]Capturing CUDA graphs (decode, FULL):   6%|▌         | 4/70 [00:00<00:03, 17.35it/s]Capturing CUDA graphs (decode, FULL):   4%|▍         | 3/70 [00:00<00:04, 15.40it/s]Capturing CUDA graphs (decode, FULL):   7%|▋         | 5/70 [00:00<00:03, 17.41it/s]Capturing CUDA graphs (decode, FULL):   9%|▊         | 6/70 [00:00<00:03, 17.07it/s]Capturing CUDA graphs (decode, FULL):  11%|█▏        | 8/70 [00:00<00:06,  9.13it/s]Capturing CUDA graphs (decode, FULL):  10%|█         | 7/70 [00:00<00:10,  6.25it/s]Capturing CUDA graphs (decode, FULL):  14%|█▍        | 10/70 [00:01<00:07,  7.69it/s]Capturing CUDA graphs (decode, FULL):  13%|█▎        | 9/70 [00:01<00:07,  7.69it/s]Capturing CUDA graphs (decode, FULL):  19%|█▊        | 13/70 [00:01<00:05, 11.07it/s]Capturing CUDA graphs (decode, FULL):  17%|█▋        | 12/70 [00:01<00:05, 11.19it/s]Capturing CUDA graphs (decode, FULL):  21%|██▏       | 15/70 [00:01<00:04, 12.42it/s]Capturing CUDA graphs (decode, FULL):  21%|██▏       | 15/70 [00:01<00:04, 13.70it/s]Capturing CUDA graphs (decode, FULL):  26%|██▌       | 18/70 [00:01<00:03, 15.55it/s]Capturing CUDA graphs (decode, FULL):  26%|██▌       | 18/70 [00:01<00:03, 16.49it/s]Capturing CUDA graphs (decode, FULL):  30%|███       | 21/70 [00:01<00:02, 17.16it/s]Capturing CUDA graphs (decode, FULL):  30%|███       | 21/70 [00:01<00:02, 17.65it/s]Capturing CUDA graphs (decode, FULL):  34%|███▍      | 24/70 [00:01<00:02, 19.52it/s]Capturing CUDA graphs (decode, FULL):  34%|███▍      | 24/70 [00:01<00:02, 19.84it/s]Capturing CUDA graphs (decode, FULL):  39%|███▊      | 27/70 [00:01<00:02, 19.77it/s]Capturing CUDA graphs (decode, FULL):  39%|███▊      | 27/70 [00:01<00:02, 19.73it/s]Capturing CUDA graphs (decode, FULL):  43%|████▎     | 30/70 [00:01<00:01, 21.79it/s]Capturing CUDA graphs (decode, FULL):  43%|████▎     | 30/70 [00:01<00:01, 21.50it/s]Capturing CUDA graphs (decode, FULL):  47%|████▋     | 33/70 [00:02<00:01, 21.56it/s]Capturing CUDA graphs (decode, FULL):  47%|████▋     | 33/70 [00:02<00:01, 21.20it/s]Capturing CUDA graphs (decode, FULL):  51%|█████▏    | 36/70 [00:02<00:01, 22.85it/s]Capturing CUDA graphs (decode, FULL):  51%|█████▏    | 36/70 [00:02<00:01, 22.43it/s]Capturing CUDA graphs (decode, FULL):  56%|█████▌    | 39/70 [00:02<00:01, 22.15it/s]Capturing CUDA graphs (decode, FULL):  56%|█████▌    | 39/70 [00:02<00:01, 21.90it/s]Capturing CUDA graphs (decode, FULL):  60%|██████    | 42/70 [00:02<00:01, 23.22it/s]Capturing CUDA graphs (decode, FULL):  60%|██████    | 42/70 [00:02<00:01, 23.05it/s]Capturing CUDA graphs (decode, FULL):  64%|██████▍   | 45/70 [00:02<00:01, 22.59it/s]Capturing CUDA graphs (decode, FULL):  64%|██████▍   | 45/70 [00:02<00:01, 22.16it/s]Capturing CUDA graphs (decode, FULL):  69%|██████▊   | 48/70 [00:02<00:00, 23.26it/s]Capturing CUDA graphs (decode, FULL):  69%|██████▊   | 48/70 [00:02<00:00, 23.07it/s]Capturing CUDA graphs (decode, FULL):  73%|███████▎  | 51/70 [00:02<00:00, 23.99it/s]Capturing CUDA graphs (decode, FULL):  73%|███████▎  | 51/70 [00:02<00:00, 23.79it/s]Capturing CUDA graphs (decode, FULL):  77%|███████▋  | 54/70 [00:02<00:00, 22.76it/s]Capturing CUDA graphs (decode, FULL):  77%|███████▋  | 54/70 [00:03<00:00, 22.64it/s]Capturing CUDA graphs (decode, FULL):  81%|████████▏ | 57/70 [00:03<00:00, 23.80it/s]Capturing CUDA graphs (decode, FULL):  81%|████████▏ | 57/70 [00:03<00:00, 23.47it/s]Capturing CUDA graphs (decode, FULL):  86%|████████▌ | 60/70 [00:03<00:00, 22.31it/s]Capturing CUDA graphs (decode, FULL):  86%|████████▌ | 60/70 [00:03<00:00, 22.14it/s]Capturing CUDA graphs (decode, FULL):  90%|█████████ | 63/70 [00:03<00:00, 21.89it/s]Capturing CUDA graphs (decode, FULL):  90%|█████████ | 63/70 [00:03<00:00, 21.69it/s]Capturing CUDA graphs (decode, FULL):  94%|█████████▍| 66/70 [00:03<00:00, 23.28it/s]Capturing CUDA graphs (decode, FULL):  94%|█████████▍| 66/70 [00:03<00:00, 23.00it/s]Capturing CUDA graphs (decode, FULL):  99%|█████████▊| 69/70 [00:03<00:00, 24.56it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 70/70 [00:03<00:00, 19.23it/s]
+Capturing CUDA graphs (decode, FULL):  99%|█████████▊| 69/70 [00:03<00:00, 24.23it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 70/70 [00:03<00:00, 18.86it/s]
+(EngineCore_DP1 pid=3917820) INFO 04-07 17:58:20 [core.py:282] init engine (profile, create kv cache, warmup model) took 23.40 seconds
+(Worker pid=3919285) (Worker pid=3919285) INFO 04-07 17:58:20 [gpu_model_runner.py:5386] Graph capturing finished in 11 secs, took -0.13 GiB
+(EngineCore_DP0 pid=3917819) INFO 04-07 17:58:20 [core.py:282] init engine (profile, create kv cache, warmup model) took 23.52 seconds
+INFO 04-07 17:58:21 [coordinator.py:203] All engine subscriptions received by DP coordinator
+(ApiServer_1 pid=3917822) WARNING 04-07 17:58:21 [loggers.py:1271] AsyncLLM created with api_server_count more than 1; disabling stats logging to avoid incomplete stats.
+(ApiServer_0 pid=3917821) WARNING 04-07 17:58:21 [loggers.py:1271] AsyncLLM created with api_server_count more than 1; disabling stats logging to avoid incomplete stats.
+(EngineCore_DP0 pid=3917819) INFO 04-07 17:58:21 [vllm.py:747] Asynchronous scheduling is enabled.
+(EngineCore_DP1 pid=3917820) INFO 04-07 17:58:21 [vllm.py:747] Asynchronous scheduling is enabled.
+INFO 04-07 17:58:21 [utils.py:248] Waiting for API servers to complete ...
+(ApiServer_0 pid=3917821) WARNING 04-07 17:58:21 [loggers.py:987] vllm:lora_requests_info prometheus metrics may be incorrect/misleading with data parallel deployments.
+(ApiServer_1 pid=3917822) WARNING 04-07 17:58:21 [loggers.py:987] vllm:lora_requests_info prometheus metrics may be incorrect/misleading with data parallel deployments.
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:21 [api_server.py:495] Supported tasks: ['generate']
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:21 [api_server.py:495] Supported tasks: ['generate']
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [serving.py:166] Loaded new LoRA adapter: name 'deepseek-coder-6.7b-lora-dirty', path '/shared_workspace_mfs/aadi/Projects/SFT/SFT_runs/model/deepseek-coder-6.7b-instruct_lora_7b_deepseek_code_edit_dirty_2026-04-07_15-52-46'
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [serving.py:166] Loaded new LoRA adapter: name 'deepseek-coder-6.7b-lora-dirty', path '/shared_workspace_mfs/aadi/Projects/SFT/SFT_runs/model/deepseek-coder-6.7b-instruct_lora_7b_deepseek_code_edit_dirty_2026-04-07_15-52-46'
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [serving.py:185] Warming up chat template processing...
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [serving.py:185] Warming up chat template processing...
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [hf.py:318] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [hf.py:318] Detected the chat template content format to be 'string'. You can set `--chat-template-content-format` to override this.
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [serving.py:210] Chat template warmup completed in 17.2ms
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [serving.py:210] Chat template warmup completed in 16.8ms
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [api_server.py:500] Starting vLLM API server 1 on http://0.0.0.0:8788
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [api_server.py:500] Starting vLLM API server 0 on http://0.0.0.0:8788
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:38] Available routes are:
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:38] Available routes are:
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /openapi.json, Methods: GET, HEAD
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /openapi.json, Methods: GET, HEAD
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /docs, Methods: GET, HEAD
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /docs, Methods: GET, HEAD
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /docs/oauth2-redirect, Methods: GET, HEAD
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /docs/oauth2-redirect, Methods: GET, HEAD
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /redoc, Methods: GET, HEAD
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /redoc, Methods: GET, HEAD
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /tokenize, Methods: POST
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /tokenize, Methods: POST
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /detokenize, Methods: POST
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /detokenize, Methods: POST
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /load, Methods: GET
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /load, Methods: GET
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /version, Methods: GET
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /version, Methods: GET
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /health, Methods: GET
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /health, Methods: GET
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /metrics, Methods: GET
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /metrics, Methods: GET
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/models, Methods: GET
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/models, Methods: GET
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /ping, Methods: GET
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /ping, Methods: GET
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /ping, Methods: POST
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /ping, Methods: POST
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /invocations, Methods: POST
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /invocations, Methods: POST
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/chat/completions, Methods: POST
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/chat/completions, Methods: POST
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/chat/completions/render, Methods: POST
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/chat/completions/render, Methods: POST
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/responses, Methods: POST
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/responses, Methods: POST
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/responses/{response_id}, Methods: GET
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/responses/{response_id}, Methods: GET
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/responses/{response_id}/cancel, Methods: POST
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/responses/{response_id}/cancel, Methods: POST
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/completions, Methods: POST
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/completions, Methods: POST
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/completions/render, Methods: POST
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/completions/render, Methods: POST
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/messages, Methods: POST
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/messages, Methods: POST
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/messages/count_tokens, Methods: POST
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /v1/messages/count_tokens, Methods: POST
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /inference/v1/generate, Methods: POST
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /inference/v1/generate, Methods: POST
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /scale_elastic_ep, Methods: POST
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /scale_elastic_ep, Methods: POST
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:22 [launcher.py:47] Route: /is_scaling_elastic_ep, Methods: POST
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:22 [launcher.py:47] Route: /is_scaling_elastic_ep, Methods: POST
+(ApiServer_0 pid=3917821) INFO:     Started server process [3917821]
+(ApiServer_1 pid=3917822) INFO:     Started server process [3917822]
+(ApiServer_0 pid=3917821) INFO:     Waiting for application startup.
+(ApiServer_1 pid=3917822) INFO:     Waiting for application startup.
+(ApiServer_1 pid=3917822) INFO:     Application startup complete.
+(ApiServer_0 pid=3917821) INFO:     Application startup complete.
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:59528 - "GET /v1/models HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:59536 - "GET /v1/models HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) WARNING 04-07 17:58:26 [input_processor.py:168] vLLM has deprecated support for supporting different tokenizers for different LoRAs. By default, vLLM uses base model's tokenizer. If you are using a LoRA with its own tokenizer, consider specifying `--tokenizer [lora_path]` to use the LoRA tokenizer.
+(ApiServer_0 pid=3917821) WARNING 04-07 17:58:26 [input_processor.py:168] vLLM has deprecated support for supporting different tokenizers for different LoRAs. By default, vLLM uses base model's tokenizer. If you are using a LoRA with its own tokenizer, consider specifying `--tokenizer [lora_path]` to use the LoRA tokenizer.
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:59572 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:59594 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:59542 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:59580 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:59590 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:59624 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:59602 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58148 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58122 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58142 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58110 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58126 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58152 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58158 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58166 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:59558 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58228 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58212 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58168 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58184 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58244 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58204 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58262 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58266 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58260 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58282 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58296 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58326 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58190 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58308 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58250 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58192 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58328 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58316 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58376 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58330 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58342 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58364 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58378 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58396 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58350 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58394 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58390 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58354 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58428 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58432 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58440 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58458 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58414 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58446 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58400 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58448 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58462 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58500 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58480 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58496 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58472 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58474 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58516 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58510 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58534 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58558 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58498 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58544 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58526 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58566 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58576 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58596 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58586 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58626 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58624 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58608 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58680 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58668 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58630 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58656 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58670 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58720 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58730 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58642 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58704 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58692 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58736 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58732 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58760 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58770 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58784 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58746 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58768 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58788 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58790 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58814 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58812 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58820 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58842 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58794 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58702 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58856 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58796 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58862 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58844 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:59618 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58830 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58868 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58896 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58924 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58900 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58880 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58946 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58910 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58986 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58906 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:59002 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:58932 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:59034 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58322 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:59032 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58960 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:59054 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:58970 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:59006 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:59078 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:59008 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:59024 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54794 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:59042 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54784 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54848 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:54788 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:59066 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54824 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54854 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54898 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:54808 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54862 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:54914 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:54866 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54836 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54882 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54798 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:54936 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54930 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54942 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54972 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54958 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54918 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:55006 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:55016 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54984 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:55022 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:55018 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:54992 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:55082 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:55066 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:55088 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:55048 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:55050 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:55004 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:55098 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_0 pid=3917821) INFO:     127.0.0.1:55126 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:55134 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:55114 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:55034 - "POST /v1/completions HTTP/1.1" 200 OK
+(ApiServer_1 pid=3917822) INFO:     127.0.0.1:55052 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO 04-07 17:58:56 [utils.py:287] Received KeyboardInterrupt, shutting down API servers...
+INFO 04-07 17:58:56 [utils.py:292] Terminating remaining processes ...
+(ApiServer_1 pid=3917822) INFO 04-07 17:58:56 [launcher.py:122] Shutting down FastAPI HTTP server.
+(ApiServer_0 pid=3917821) WARNING 04-07 17:58:56 [launcher.py:116] port 8788 is used by process psutil.Process(pid=3917822, name='VLLM::APIServer_1', status='running') launched with command:
+(ApiServer_0 pid=3917821) WARNING 04-07 17:58:56 [launcher.py:116] VLLM::APIServer_1                                                                                                                                                                  
+(ApiServer_1 pid=3917822) INFO:     Shutting down
+(ApiServer_0 pid=3917821) INFO 04-07 17:58:56 [launcher.py:122] Shutting down FastAPI HTTP server.
+(ApiServer_0 pid=3917821) INFO:     Shutting down
+(ApiServer_1 pid=3917822) INFO:     Waiting for application shutdown.
+(ApiServer_1 pid=3917822) INFO:     Application shutdown complete.
+(ApiServer_0 pid=3917821) INFO:     Waiting for application shutdown.
+(ApiServer_0 pid=3917821) INFO:     Application shutdown complete.
+(Worker pid=3919285) (Worker pid=3919285) INFO 04-07 17:58:57 [multiproc_executor.py:749] Parent process exited, terminating worker
+(Worker pid=3919284) (Worker pid=3919284) INFO 04-07 17:58:57 [multiproc_executor.py:749] Parent process exited, terminating worker
+(Worker pid=3919284) (Worker pid=3919284) INFO 04-07 17:58:57 [multiproc_executor.py:802] WorkerProc shutting down.
+(Worker pid=3919285) (Worker pid=3919285) INFO 04-07 17:58:57 [multiproc_executor.py:802] WorkerProc shutting down.

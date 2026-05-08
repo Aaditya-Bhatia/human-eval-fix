@@ -1,0 +1,189 @@
+============================================================
+  Running: deepseek-coder-6.7b-baseline
+  Base:    /shared_workspace_mfs/aadi/Models/hub/models--deepseek-ai--deepseek-coder-6.7b-instruct/snapshots/e5d64addd26a6a1db0f9b863abf6ee3141936807
+  GPUs:    0,1 (DP=2)
+  Time:    Tue Apr  7 17:51:43 UTC 2026
+============================================================
+Starting vLLM: vllm serve /shared_workspace_mfs/aadi/Models/hub/models--deepseek-ai--deepseek-coder-6.7b-instruct/snapshots/e5d64addd26a6a1db0f9b863abf6ee3141936807 --port 8788 --tensor-parallel-size 1 --data-parallel-size 2 --gpu-memory-utilization 0.90 --max-num-seqs 256 --max-model-len 16384 --trust-remote-code --chat-template /shared_workspace_mfs/aadi/Projects/EditBench_fork/chat_templates/simple_concat.jinja --served-model-name deepseek-coder-6.7b-baseline
+vLLM PID: 3896487, log: /shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/logs/deepseek-coder-6.7b-baseline-serve-20260407-175143.log
+Waiting for vLLM server at http://127.0.0.1:8788/v1/models ...
+Server is ready (took ~130s)
+Running HumanEvalFix benchmark...
+Running humanevalfixtests-python on 164 problems via http://127.0.0.1:8788 with model=deepseek-coder-6.7b-baseline, prompt=instruct, n_samples=1
+[ok] Python/2
+[ok] Python/7
+[ok] Python/5
+[ok] Python/3
+[ok] Python/4
+[ok] Python/8
+[ok] Python/1
+[ok] Python/0
+[ok] Python/9
+[ok] Python/10
+[ok] Python/16
+[ok] Python/14
+[ok] Python/15
+[ok] Python/12
+[ok] Python/11
+[ok] Python/17
+[ok] Python/22
+[ok] Python/23
+[ok] Python/18
+[ok] Python/21
+[ok] Python/24
+[ok] Python/27
+[ok] Python/28
+[ok] Python/26
+[ok] Python/29
+[ok] Python/19
+[ok] Python/25
+[ok] Python/20
+[ok] Python/33
+[ok] Python/34
+[ok] Python/30
+[ok] Python/32
+[ok] Python/36
+[ok] Python/37
+[ok] Python/41
+[ok] Python/38
+[ok] Python/42
+[ok] Python/40
+[ok] Python/44
+[ok] Python/43
+[ok] Python/45
+[ok] Python/39
+[ok] Python/49
+[ok] Python/47
+[ok] Python/50
+[ok] Python/51
+[ok] Python/52
+[ok] Python/54
+[ok] Python/55
+[ok] Python/56
+[ok] Python/57
+[ok] Python/58
+[ok] Python/6
+[ok] Python/60
+[ok] Python/61
+[ok] Python/62
+[ok] Python/13
+[ok] Python/64
+[ok] Python/63
+[ok] Python/65
+[ok] Python/66
+[ok] Python/31
+[ok] Python/67
+[ok] Python/68
+[ok] Python/35
+[ok] Python/70
+[ok] Python/72
+[ok] Python/73
+[ok] Python/71
+[ok] Python/74
+[ok] Python/76
+[ok] Python/69
+[ok] Python/79
+[ok] Python/77
+[ok] Python/46
+[ok] Python/48
+[ok] Python/83
+[ok] Python/78
+[ok] Python/82
+[ok] Python/84
+[ok] Python/80
+[ok] Python/85
+[ok] Python/86
+[ok] Python/88
+[ok] Python/75
+[ok] Python/90
+[ok] Python/53
+[ok] Python/87
+[ok] Python/89
+[ok] Python/91
+[ok] Python/97
+[ok] Python/92
+[ok] Python/93
+[ok] Python/98
+[ok] Python/96
+[ok] Python/81
+[ok] Python/102
+[ok] Python/100
+[ok] Python/94
+[ok] Python/95
+[ok] Python/101
+[ok] Python/99
+[ok] Python/103
+[ok] Python/104
+[ok] Python/106
+[ok] Python/59
+[ok] Python/105
+[ok] Python/110
+[ok] Python/108
+[ok] Python/112
+[ok] Python/115
+[ok] Python/109
+[ok] Python/116
+[ok] Python/111
+[ok] Python/107
+[ok] Python/120
+[ok] Python/113
+[ok] Python/122
+[ok] Python/114
+[ok] Python/121
+[ok] Python/117
+[ok] Python/127
+[ok] Python/125
+[ok] Python/118
+[ok] Python/128
+[ok] Python/123
+[ok] Python/133
+[ok] Python/124
+[ok] Python/131
+[ok] Python/126
+[ok] Python/130
+[ok] Python/134
+[ok] Python/135
+[ok] Python/138
+[ok] Python/136
+[ok] Python/119
+[ok] Python/139
+[ok] Python/132
+[ok] Python/137
+[ok] Python/129
+[ok] Python/142
+[ok] Python/145
+[ok] Python/144
+[ok] Python/141
+[ok] Python/146
+[ok] Python/143
+[ok] Python/140
+[ok] Python/147
+[ok] Python/151
+[ok] Python/150
+[ok] Python/149
+[ok] Python/152
+[ok] Python/157
+[ok] Python/158
+[ok] Python/159
+[ok] Python/154
+[ok] Python/155
+[ok] Python/160
+[ok] Python/148
+[ok] Python/162
+[ok] Python/163
+[ok] Python/153
+[ok] Python/161
+[ok] Python/156
+Saved generations to /shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/humanevalfixtests-python__deepseek-coder-6.7b-baseline__instruct__start0__end164.generations.json
+Saved metrics to /shared_workspace_mfs/aadi/Projects/human_eval_fix/bigcode-evaluation-harness/vllm_humanevalfix_runs/humanevalfixtests-python__deepseek-coder-6.7b-baseline__instruct__start0__end164.metrics.json
+{
+  "pass@1": 0.4573170731707317
+}
+Completed: deepseek-coder-6.7b-baseline at Tue Apr  7 17:54:20 UTC 2026
+Stopping vLLM server (PID 3896487)...
+============================================================
+  DEEPSEEK 6.7B RUN COMPLETE at Tue Apr  7 17:54:30 UTC 2026
+============================================================
+{
+  "pass@1": 0.4573170731707317
+}
