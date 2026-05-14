@@ -16,3 +16,7 @@ __pycache__/
 
 # Claude project config (local)
 .claude/
+
+# Active working dir — committed backups live under backups/ instead.
+# See backups/README.md for the procedure.
+bigcode-evaluation-harness/vllm_humanevalfix_runs/
