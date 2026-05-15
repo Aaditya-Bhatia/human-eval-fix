@@ -54,15 +54,19 @@ git commit -m "Back up <model>-<variant> HEF run"
 git push origin main                # NOT 'bigcode' — see note below
 ```
 
-## Dual-remote note
+## Dual-remote note (HEF only)
 
 This repo has two remotes with **unrelated histories**:
-- `origin` → `human-eval-fix.git` (this CPU host's tree; backups go here)
-- `bigcode` → `bigcode-evaluation-harness.git` (GPU pod's fork; pull only)
+- `origin` → `human-eval-fix.git` (CPU host; backups push here)
+- `bigcode` → `bigcode-evaluation-harness.git` (GPU pod; pull only)
 
-Always push backups to `origin`. Pushing to `bigcode` will fail with
-`refusing to merge unrelated histories`. See
-`Master_VLLM/docs/repo_layout.md` for the full story.
+Pulling new generations from `bigcode/main` requires a **surgical**
+recipe — the naive `git archive bigcode/main … | tar -x` overwrites
+locally-modified `summary.json` files (eval state → generation state).
+
+**Full procedure for committing, pulling, and recovering across both
+hosts:** see `Master_VLLM/.claude/agents/cross-repo-backup-protocol.md`.
+That is the canonical doc — do not improvise from this README.
 
 ## INDEX.csv
 
